@@ -10,19 +10,18 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
+    font-size: 10px;
 } 
 
-body {
+body { 
     font-size: 100%;
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
-
 }
 
 .tamanho-principal {
-    width: 1100px;
+    width: 100%;
+    max-width: 110rem;
 }
-
-
 
 .cabecalho {
     display: flex;
@@ -31,31 +30,34 @@ body {
     justify-content: center;
 }
 
-.cabecalho > div {
+.cabecalho > .tamanho-principal {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
 }
 
 .cabecalho-imagem {
-
-    height: 72px;
-    width: 62px;
-    height: 62px;
+    height: 7.2rem;
+    width: 6.2rem;
+    height: 6.2rem;
 }
 
 .cabecalho-menu {
     display: flex;
-    gap: 32px;
+    gap: 3.2rem;
+}
+
+.cabecalho-menu svg {
+  display: none;
 }
 
 .cabecalho-menu-item {
     font-family: "Sarala", sans-serif;
     color: #FFF2E7;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8rem;
     transition: 300ms;
 }
 
@@ -64,7 +66,7 @@ body {
 }
 
 .conteudo {
-    margin-bottom: 48px;
+    margin-bottom: 4.8rem;
     border-top: 0.4px solid #fff2e7;
 }
 
@@ -73,40 +75,39 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    /* padding-top: 30px; */
-    height: 70vh;
+    min-height: 70vh;
 }
 
 .conteudo-principal-escrito {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 4rem;
 }
 
 .conteudo-principal-escrito-titulo {
     font-family: "Righteous", sans-serif;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 6.4rem;
     color: #FFF2E7;
 }
 
 .conteudo-principal-escrito-subtitulo {
     font-family: "Sarala", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 2rem;
     color: #ECD6C4;
 }
 
 .conteudo-principal-escrito-botao {
     background-color: #ECD6C4;
-    width: 180px;
-    height: 60px;
+    width: 18rem;
+    height: 6rem;
     border: none;
     box-shadow: 4px 5px 4px 0px #00000040;
-    border-radius: 20px;
+    border-radius: 2rem;
     font-family: "Sarala", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #2F2325;
     transition: 300ms;
     display: flex;
@@ -120,7 +121,7 @@ body {
 }
 
 .conteudo-principal-imagem {
-    height: 400px;
+    height: 40rem;
     border-radius: 100%;
     
 }
@@ -129,37 +130,37 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
-    margin-top: 48px;
+    gap: 2.4rem;
+    margin-top: 4.8rem;
 }
 
 .conteudo-secundario-titulo {
     border-top: 0.4px solid #fff2e7;
-    padding-top: 48px;
+    padding-top: 4.8rem;
     font-family: "Righteous", cursive;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #fff2e7;
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
     text-align: center;
 }
  
 .conteudo-secundario-paragrafo {
     font-family: "Sarala", sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #ECD6C4;
     text-align: center;
 }
 
 .rodape {
-    padding: 32px;
+    padding: 3.2rem;
     border-top: 0.4px solid #fff2e7;
 
 }
 
 .rodape-imagem {
-    height: 48px;
+    height: 4.8rem;
     display: block;
     margin: 0 auto;
 }
@@ -167,19 +168,19 @@ body {
 .habilidades-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    column-gap: 30px;
+    gap: 1rem;
+    column-gap: 3rem;
 }
 
 .projetos-container {
     display: flex;
-    gap: 30px;
+    gap: 3rem;
     width: 100%;
 }
 
 .projeto-img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 2rem;
     transition: 370ms ease-in-out;
 }
 
@@ -205,7 +206,7 @@ main.conteudo {
 .contatos-container {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 3rem;
 }
 
 .contato-item {
@@ -214,40 +215,40 @@ main.conteudo {
     backdrop-filter: blur(8.9px);
     -webkit-backdrop-filter: blur(8.9px);
     border: 5px solid rgba(87, 59, 56, 0.29);
-    border-radius: 20px;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
+    gap: 2rem;
+    padding: 2rem;
 }
 
 .contato-img-container {
-    border-radius: 20px 20px 0 0;
+    border-radius: 2rem 2rem 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 1rem;
     border-bottom: 0.5px solid #fff2e7;
     width: 100%;
-    padding: 20px;
+    padding: 2rem;
 }
 
 .contato-img-container h4 {
     font-family: "Righteous", cursive;
     font-weight: 400;
-    font-size: 25px;
-    height: 30px;
+    font-size: 2.5rem;
+    height: 3rem;
     color: #ECD6C4;
 }
 
 .imagem-card {
     aspect-ratio: 1;
     border-radius: 100%;
-    max-width: 200px;
+    max-width: 20rem;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -260,24 +261,23 @@ main.conteudo {
 }
 
 .contato-info{
-    min-height: 200px;
+    min-height: 20rem;
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 15px;
-  
+    gap: 1.5rem;
 }
 
 .contato-info-label {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     align-items: center;
 }
 
 .contato-info-label p {
     font-family: "Sarala", sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #ECD6C4;
 }
 
@@ -286,19 +286,19 @@ main.conteudo {
 }
 
 .contato-img-container > img {
-    width: 30px;
+    width: 3rem;
 }
 
 .botao-conteudo-principal {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .rodape{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 4rem;
     font-family: "Righteous", sans-serif;
     color: #FFF2E7;
     transition: 300ms;
@@ -307,4 +307,131 @@ main.conteudo {
 
 .rodape:hover {
     text-shadow: rgba(230, 181, 75, 0.877) 1px 0 15px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #FFF2E7;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.cabecalho-menu {
+  position: relative;
+}
+
+.cabecalho-menu svg{
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  fill: #FFF2E7;
+}
+
+@media (max-width: 1200px) {
+  .conteudo-principal {
+    flex-direction: column;
+    padding-top: 3rem;
+    gap: 4rem;
+  }
+  
+  main.conteudo {
+    padding: 0 3rem;
+  }
+  
+  .contatos-container, 
+  .projetos-container {
+    flex-wrap: wrap;
+  }
+
+  .cabecalho {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    scroll-padding-top: 10rem;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+  .cabecalho{
+    width: 100%;
+    position: fixed;
+    border-bottom: 0.4px solid #fff2e7;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.4px);
+    -webkit-backdrop-filter: blur(10.4px);
+    z-index: 2;
+  }
+  .conteudo {
+    border-top: none;
+  }
+  
+  .conteudo-principal{
+    padding-top: 8.6rem;
+  }
+  .mobile-menu {
+    display: block;
+  }
+
+  .cabecalho-menu svg {
+    display: block;
+  }  
+
+  .cabecalho-menu {
+    /* From https://css.glass */
+    background: #23232e;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0; 
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: 300ms;
+  }
+
+  .cabecalho-menu-ativo {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .conteudo-principal-imagem {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .botao-conteudo-principal {
+    flex-direction: column;
+  }
+
+  .contato-info-label p {
+    font-size: 1.4rem;
+  }
+
+  .contato-img-container{
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+
+  .conteudo-principal-escrito-subtitulo br {
+    display: none;
+  }
 }
